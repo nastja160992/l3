@@ -1,2 +1,1 @@
-l3
-==
+Client-server application
