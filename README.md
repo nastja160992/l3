@@ -1,1 +1,2 @@
-Client-server application
+Client-server application.
+ *Client.c - client part.
