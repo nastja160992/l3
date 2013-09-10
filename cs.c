@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void* serve_client(void* connection) {
     int conn = *((int*) connection);
     char* buffer;
@@ -7,7 +8,7 @@ void* serve_client(void* connection) {
 
     file = fopen("transfer", "r");
     if (!file) {
-        strcpy(buffer, "File not found, sorry.\n");
+        strcpy(buffer, "File not found.\n");
     } else {
         fseek(file, 0L, SEEK_END);
         size = ftell(file);
